@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Complemento</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #compDec, #compBin {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+<body>
+    <h1>Calculadora de Complemento</h1>
+    <form action="">
+        <article>
+            <h2>Decimal</h2>
+            <p>Digite um número: <input type="text" id="inDecimal"></p>
+            <p id="compDec"><input type="button" value="Complemento de 9" id="btn9"><input type="button" value="Complemento de 10" id="btn10"></p>
+            <p id="outDecimal"></p>
+        </article>
+        
+        <article>
+            <h2>Binário</h2>
+            <p>Digite um número: <input type="text" id="inBinario"></p>
+            <p id="compBin"><input type="button" value="Complemento de 1" id="btn1"><input type="button" value="Complemento de 2" id="btn2"></p>
+            <p id="outBinario"></p>
+        </article>      
+    </form>
+
+    <script src="complemento.js"></script>
+</body>
+</html>
